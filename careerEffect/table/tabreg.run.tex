@@ -1,0 +1,55 @@
+
+\begin{table}
+\begin{center}
+\scalebox{0.9}{
+\begin{threeparttable}
+\begin{tabular}{l D{.}{.}{5.6} D{.}{.}{6.4} D{.}{.}{6.6} D{.}{.}{6.6} D{.}{.}{6.6}}
+\toprule
+ & \multicolumn{1}{c}{Linear} & \multicolumn{1}{c}{Cox PH} & \multicolumn{1}{c}{Weibull} & \multicolumn{1}{c}{Weibull (2)} & \multicolumn{1}{c}{Weibull (3)} \\
+\midrule
+(Intercept)          & 46.081^{***}           &                        & 3.921^{***}            & 3.921^{***}             & 3.933^{***}             \\
+                     & (0.123)                &                        & (0.003)                & (0.002)                 & (0.002)                 \\
+Female               & 0.355                  & -0.025                 & 0.002                  &                         &                         \\
+                     & (0.310)                & (0.032)                & (0.006)                &                         &                         \\
+Upper house          & 7.294^{***}            & -0.590                 & 0.123^{***}            & 0.123^{***}             & 0.109^{***}             \\
+                     & (0.761)                & (0.077)                & (0.015)                & (0.015)                 & (0.014)                 \\
+Local Assembly       & 5.254^{***}            & -0.421                 & 0.084^{***}            & 0.084^{***}             & 0.075^{***}             \\
+                     & (0.250)                & (0.026)                & (0.005)                & (0.005)                 & (0.005)                 \\
+Mayor                & 5.772^{***}            & -0.422                 & 0.085^{***}            & 0.085^{***}             & 0.079^{***}             \\
+                     & (0.682)                & (0.069)                & (0.014)                & (0.014)                 & (0.013)                 \\
+Prefectural governor & 8.594^{***}            & -0.628                 & 0.128^{***}            & 0.128^{***}             & 0.129^{***}             \\
+                     & (1.699)                & (0.172)                & (0.034)                & (0.034)                 & (0.031)                 \\
+Bureaucrat           & 2.564^{***}            & -0.161                 & 0.031^{***}            & 0.031^{***}             & 0.025^{**}              \\
+                     & (0.406)                & (0.041)                & (0.008)                & (0.008)                 & (0.008)                 \\
+Lawyer               & 0.170                  & 0.032                  & -0.009                 & -0.009                  & -0.005                  \\
+                     & (0.569)                & (0.058)                & (0.011)                & (0.011)                 & (0.011)                 \\
+Secretary            & -4.582^{***}           & 0.504                  & -0.103^{***}           & -0.104^{***}            & -0.101^{***}            \\
+                     & (0.330)                & (0.034)                & (0.007)                & (0.007)                 & (0.006)                 \\
+Open recruitment     & -6.396^{***}           & 0.793                  & -0.160^{***}           & -0.160^{***}            & -0.137^{***}            \\
+                     & (0.681)                & (0.070)                & (0.014)                & (0.014)                 & (0.014)                 \\
+\midrule
+Gender strata        & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} \\
+Cohort FE            & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No}  & \multicolumn{1}{c}{Yes} \\
+R$^2$                & 0.087                  &                        &                        &                         &                         \\
+Adj. R$^2$           & 0.086                  &                        &                        &                         &                         \\
+Num. obs.            & 10469                  & 10469                  & 10469                  & 10469                   & 10469                   \\
+R$^2$                &                        & 0.068                  &                        &                         &                         \\
+AIC                  &                        & 172164.567             & 78156.671              & 78154.973               & 77542.215               \\
+BIC                  &                        &                        & 78236.489              & 78234.791               & 77680.083               \\
+Log Likelihood       &                        &                        & -39067.335             & -39066.487              & -38752.108              \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\scriptsize{
+\item $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$.
+\item Dependent variables are time before candidates' first candidacy to parliament (i.e., their age at that time).
+\item Cohorts are groups based on candidates' year of birth. Each of five cohorts has a length of thirty years. 
+\item The period corresponding to the first cohort starts at 1850.}
+\end{tablenotes}
+\end{threeparttable}
+}
+\caption{Regression output: first candidacy}
+\label{table:tabreg.run}
+\end{center}
+\end{table}
+

@@ -1,0 +1,53 @@
+
+\begin{table}[h]
+\begin{center}
+\scalebox{0.9}{
+\begin{threeparttable}
+\begin{tabular}{l D{.}{.}{6.6} D{.}{.}{6.6} D{.}{.}{6.6} D{.}{.}{6.6}}
+\toprule
+ & \multicolumn{2}{c}{First Candidacy} & \multicolumn{2}{c}{First Win} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & \multicolumn{1}{c}{Baseline} & \multicolumn{1}{c}{Control} & \multicolumn{1}{c}{Baseline} & \multicolumn{1}{c}{Control} \\
+\midrule
+(Intercept)                & 3.232^{***}  & 3.231^{***}  & 3.300^{***}  & 3.301^{***}  \\
+                           & (0.005)      & (0.005)      & (0.010)      & (0.010)      \\
+Local Assembly             & 0.180^{***}  & 0.182^{***}  & 0.102^{***}  & 0.088^{***}  \\
+                           & (0.010)      & (0.011)      & (0.014)      & (0.016)      \\
+Bureaucrat                 & 0.111^{***}  & 0.104^{***}  & 0.080^{***}  & 0.076^{***}  \\
+                           & (0.017)      & (0.017)      & (0.018)      & (0.018)      \\
+Secretary                  & -0.191^{***} & -0.175^{***} & -0.165^{***} & -0.129^{***} \\
+                           & (0.014)      & (0.016)      & (0.017)      & (0.022)      \\
+Lawyer                     & -0.006       & -0.006       & -0.038       & -0.041       \\
+                           & (0.024)      & (0.024)      & (0.027)      & (0.027)      \\
+Juku                       & -0.441^{***} & -0.444^{***} & -0.421^{***} & -0.430^{***} \\
+                           & (0.038)      & (0.038)      & (0.042)      & (0.042)      \\
+Female                     & -0.000       & -0.000       & -0.063^{*}   & -0.063^{*}   \\
+                           & (0.013)      & (0.013)      & (0.027)      & (0.027)      \\
+Successor                  & -0.103^{***} & -0.068^{**}  & -0.090^{***} & -0.081^{***} \\
+                           & (0.016)      & (0.021)      & (0.015)      & (0.020)      \\
+Open recruitment           & -0.285^{***} & -0.283^{***} & -0.249^{***} & -0.247^{***} \\
+                           & (0.029)      & (0.029)      & (0.028)      & (0.028)      \\
+Pure PR candidate          & 0.107^{***}  & 0.106^{***}  & 0.125^{***}  & 0.124^{***}  \\
+                           & (0.017)      & (0.017)      & (0.028)      & (0.028)      \\
+Local Assembly × Successor &              & -0.045       &              & 0.048        \\
+                           &              & (0.038)      &              & (0.035)      \\
+Secretary × Successor      &              & -0.100^{**}  &              & -0.097^{**}  \\
+                           &              & (0.037)      &              & (0.036)      \\
+\midrule
+Num. obs                   & 10470        & 10470        & 3091         & 3091         \\
+Log Likelihood             & -38807.395   & -38803.351   & -11072.292   & -11067.553   \\
+AIC                        & 77636.790    & 77632.701    & 22166.585    & 22161.106    \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\scriptsize{
+\item $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$.
+\item \textit{Note}. Coefficients are changes in \textit{survival time},i.e., years spent before candidates' first candidacy (first and second columns) and election (third and fourth columns).}
+\end{tablenotes}
+\end{threeparttable}
+}
+\caption{Weibull Regression: Years Spent Before First Candidacy}
+\label{table:weibull}
+\end{center}
+\end{table}
+
