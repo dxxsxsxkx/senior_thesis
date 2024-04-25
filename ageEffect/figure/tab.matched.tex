@@ -1,0 +1,46 @@
+
+\begin{table}[h]
+\begin{center}
+\begin{threeparttable}
+\begin{tabular}{l D{.}{.}{4.4} D{.}{.}{4.4} D{.}{.}{4.4} D{.}{.}{4.4} D{.}{.}{4.4}}
+\toprule
+ & \multicolumn{1}{c}{Model 1} & \multicolumn{1}{c}{Model 2} & \multicolumn{1}{c}{Model 3} & \multicolumn{1}{c}{Model 4} & \multicolumn{1}{c}{Model 5} \\
+\midrule
+(Intercept)               & 23.699                 & -6.010                 & -43.899                &                         &                         \\
+                          & (0.349)                & (1.978)                & (8.675)                &                         &                         \\
+Treatment                 & -0.538                 & 1.600                  & 44.510                 & 1.801                   & 48.909                  \\
+                          & (0.554)                & (0.413)                & (8.603)                & (0.425)                 & (4.069)                 \\
+Incumbency                &                        & 15.961                 & 14.844                 & 15.321                  & 14.132                  \\
+                          &                        & (1.978)                & (8.675)                & (0.563)                 & (0.681)                 \\
+Expenditure: log          &                        & 1.488                  & 4.001                  & 1.639                   & 4.449                   \\
+                          &                        & (0.413)                & (8.603)                & (0.425)                 & (4.069)                 \\
+LDP                       &                        & 16.266                 & 54.899                 & 16.046                  & 62.455                  \\
+                          &                        & (1.978)                & (8.675)                & (0.563)                 & (0.681)                 \\
+Inheritance               &                        & 8.165                  & 43.080                 & 8.370                   & 40.150                  \\
+                          &                        & (0.413)                & (8.603)                & (0.425)                 & (4.069)                 \\
+Treatment * Incumbency    &                        &                        & 1.103                  &                         & 0.572                   \\
+                          &                        &                        & (8.675)                &                         & (0.681)                 \\
+Treatment * Expenditure   &                        &                        & -2.848                 &                         & -3.119                  \\
+                          &                        &                        & (8.603)                &                         & (4.069)                 \\
+Expenditure * LDP         &                        &                        & -2.489                 &                         & -2.989                  \\
+                          &                        &                        & (8.675)                &                         & (0.681)                 \\
+Expenditure * Inheritance &                        &                        & -2.160                 &                         & -1.964                  \\
+                          &                        &                        & (8.603)                &                         & (4.069)                 \\
+\midrule
+Fixed Effects             & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} \\
+Num. obs.                 & 4725.0               & 4725.0              & 4725.0               & 4725.0                & 4725.0               \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\scriptsize{
+\item Treatment is to be younger than 
+      (Average age of candidates in a particular election) - 
+      (Standard deviation of candidates' age in that election).
+}
+\end{tablenotes}
+\end{threeparttable}
+\caption{Linear Models: Post-Matching Analysis}
+\label{table:matched}
+\end{center}
+\end{table}
+
