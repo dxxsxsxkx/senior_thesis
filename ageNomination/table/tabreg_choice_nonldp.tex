@@ -1,0 +1,51 @@
+
+\begin{table}[htbp]
+\begin{center}
+\scalebox{0.7}{
+\begin{threeparttable}
+\begin{tabular}{l D{.}{.}{5.6} D{.}{.}{5.6} D{.}{.}{5.4} D{.}{.}{2.4} D{.}{.}{5.4} D{.}{.}{2.4}}
+\toprule
+ & \multicolumn{2}{c}{Ordered logit} & \multicolumn{2}{c}{Cumulative link} & \multicolumn{2}{c}{Multinomial logit} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+ & \multicolumn{1}{c}{ } & \multicolumn{1}{c}{ } & \multicolumn{1}{c}{Fair | Medium} & \multicolumn{1}{c}{Medium | Tough} & \multicolumn{1}{c}{Fair | Medium} & \multicolumn{1}{c}{Medium | Tough} \\
+\midrule
+Coefficients                &                        &                         &                         &                       &                         &                       \\
+                            &                        &                         &                         &                       &                         &                       \\
+\quad Age                   & 0.018^{***}            & 0.030^{***}             & -0.022                  & -0.032                & 0.012                   & 0.041                 \\
+                            & (0.003)                & (0.004)                 & (0.006)                 & (0.004)               & (0.006)                 & (0.006)               \\
+\quad Female                &                        & 0.506^{***}             & 0.509                   & 0.509                 & 0.576                   & 0.909                 \\
+                            &                        & (0.101)                 & (0.101)                 & (0.101)               & (0.199)                 & (0.192)               \\
+\quad Celebrity candidate   &                        & -0.293                  & -1.841                  & -1.841                & 0.023                   & -0.344                \\
+                            &                        & (0.179)                 & (0.102)                 & (0.102)               & (0.304)                 & (0.305)               \\
+\quad N of elections before &                        & -0.085^{***}            & 0.025                   & 0.105                 & -0.008                  & -0.100                \\
+                            &                        & (0.022)                 & (0.032)                 & (0.024)               & (0.039)                 & (0.039)               \\
+\quad Dual nomination       &                        & -1.829^{***}            & -0.297                  & -0.297                & -0.183                  & -1.948                \\
+                            &                        & (0.101)                 & (0.168)                 & (0.168)               & (0.206)                 & (0.187)               \\
+\quad Incumbency            &                        & -0.659^{***}            & -0.285                  & -0.285                & -0.388                  & -0.991                \\
+                            &                        & (0.088)                 & (0.179)                 & (0.179)               & (0.151)                 & (0.150)               \\
+Thresholds                  &                        &                         &                         &                       &                         &                       \\
+                            &                        &                         &                         &                       &                         &                       \\
+\quad Fair | Medium         & -1.213^{***}           & -3.492^{***}            & -3.781                  &                       &                         &                       \\
+                            & (0.145)                & (0.230)                 & (0.300)                 &                       &                         &                       \\
+\quad Medium | Tough        & 0.476^{***}            & -1.513^{***}            &                         & -1.448                &                         &                       \\
+                            & (0.143)                & (0.226)                 &                         & (0.232)               &                         &                       \\
+\midrule
+Year FE                     & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{ } & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{ } \\
+AIC                         & 7843.968               & 6579.386                & 6575.409                &                       & 6275.073                &                       \\
+BIC                         & 7863.099               & 6674.389                &                         &                       &                         &                       \\
+Log Likelihood              & -3918.984              & -3274.693               & -3270.704               &                       & -3109.537               &                       \\
+Num. obs.                   & 4346                   & 4161                    & 6935                    &                       & 6935                    &                       \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\scriptsize{
+\item $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$.\item P-values are not displayed for the cumulative link and multinomial models.
+\item Dependent variables are categories of ranks in party lists.}
+\end{tablenotes}
+\end{threeparttable}
+}
+\caption{Ordered / multinomial model (Non-LDP candidates)}
+\label{table:coefChoiceNonLDP}
+\end{center}
+\end{table}
+

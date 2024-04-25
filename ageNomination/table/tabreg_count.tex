@@ -1,0 +1,55 @@
+
+\begin{table}
+\scalebox{0.8}{
+\begin{threeparttable}
+\begin{tabular}{l D{.}{.}{6.5} D{.}{.}{6.5} D{.}{.}{6.3} D{.}{.}{6.3}}
+\toprule
+ & \multicolumn{1}{c}{Univariate NB} & \multicolumn{1}{c}{NB} & \multicolumn{1}{c}{Univariate Zero-inflated NB} & \multicolumn{1}{c}{Zero-inflated NB} \\
+\midrule
+Coefficients                       &                         &                         &                         &                         \\
+                                   &                         &                         &                         &                         \\
+\quad (Intercept)                  & 0.67^{***}              & 0.45                    & 0.71                    & 1.78                    \\
+                                   & (0.11)                  & (0.38)                  & (0.10)                  & (0.13)                  \\
+\quad Age                          & 0.01^{***}              & 0.01^{***}              & 0.01                    & 0.02                    \\
+                                   & (0.00)                  & (0.00)                  & (0.00)                  & (0.00)                  \\
+\quad Female                       &                         & -0.03                   &                         & -0.22                   \\
+                                   &                         & (0.05)                  &                         & (0.06)                  \\
+\quad Celebrity candidate          &                         & -0.16                   &                         & -0.12                   \\
+                                   &                         & (0.11)                  &                         & (0.12)                  \\
+\quad N of elections before        &                         & -0.06^{***}             &                         & -0.05                   \\
+                                   &                         & (0.01)                  &                         & (0.01)                  \\
+\quad Dual nomination              &                         & -2.27^{***}             &                         & -1.79                   \\
+                                   &                         & (0.04)                  &                         & (0.05)                  \\
+\quad Incumbency                   &                         & -0.60^{***}             &                         & -0.36                   \\
+                                   &                         & (0.04)                  &                         & (0.05)                  \\
+\quad District magnitude           &                         & 0.03^{***}              &                         & 0.03                    \\
+                                   &                         & (0.00)                  &                         & (0.00)                  \\
+\quad Log(theta)                   &                         &                         & -1.03                   & -0.47                   \\
+                                   &                         &                         & (0.02)                  & (0.08)                  \\
+Zero model                         &                         &                         &                         &                         \\
+                                   &                         &                         &                         &                         \\
+\quad (Intercept)                  &                         &                         & -11.22                  & -12.41                  \\
+                                   &                         &                         & (16.34)                 & (29.44)                 \\
+\quad Parties with one-person list &                         &                         & 10.92                   & 12.16                   \\
+                                   &                         &                         & (16.34)                 & (29.44)                 \\
+\midrule
+Party FE                           & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{No}  & \multicolumn{1}{c}{No}  \\
+Year FE                            & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} \\
+AIC                                & 29391.90                & 23620.14                & 29166.34                & 25833.97                \\
+BIC                                & 29412.43                & 23913.08                &                         &                         \\
+Log Likelihood                     & -14692.95               & -11767.07               & -14578.17               & -12898.99               \\
+Deviance                           & 6654.45                 & 6243.98                 &                         &                         \\
+Num. obs.                          & 6935                    & 6719                    & 6935                    & 6719                    \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\scriptsize{
+\item $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$.\item P-values are not displayed for the Zero-inflated NB models.
+\item Dependent variables are (candidates' PR ranks - 1).}
+\end{tablenotes}
+\end{threeparttable}
+}
+\caption{All candidates}
+\label{table:coefCount}
+\end{table}
+
